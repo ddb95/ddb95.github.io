@@ -88,7 +88,7 @@
 
 	// Reflect scrolling in navigation
 	var navActive = function (section) {
-		debugger;
+
 		var $el = $('#navbar > ul');
 		$el.find('li').removeClass('active');
 		$el.each(function () {
@@ -365,15 +365,16 @@
 	};
 
 	var aboutAnimate = function () {
-		if ($('#fh5co-about').length > 0) {
+		var about = $('#fh5co-about');
+		if (about.length > 0) {
 
-			$('#fh5co-about').waypoint(function (direction) {
+			about.waypoint(function (direction) {
 
 				if (direction === 'down' && !$(this.element).hasClass('animated')) {
 
 
 					setTimeout(function () {
-						$('#fh5co-about .to-animate').each(function (k) {
+						about.find('.to-animate').each(function (k) {
 							var el = $(this);
 
 							setTimeout(function () {
@@ -382,6 +383,7 @@
 
 						});
 					}, 200);
+
 
 
 					$(this.element).addClass('animated');
