@@ -24,6 +24,9 @@ body {
   position: relative;
 }
 
+.btn-raised{
+  cursor: pointer;
+}
 
 #colour-variations {
   padding: 10px;

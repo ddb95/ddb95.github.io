@@ -5,7 +5,7 @@
 
 
 
-	// iPad and iPod detection	
+	// iPad and iPod detection
 	var isiPad = function () {
 		return (navigator.platform.indexOf("iPad") != -1);
 	};
@@ -62,7 +62,7 @@
 
 	// Page Nav
 	var clickMenu = function () {
-
+		debugger;
 		$('#navbar a:not([class="external"])').click(function (event) {
 			var section = $(this).data('nav-section'),
 				navbar = $('#navbar');
@@ -98,7 +98,7 @@
 	};
 
 	var navigationSection = function () {
-
+		debugger;
 		var $section = $('section[data-section]');
 
 		$section.waypoint(function (direction) {
@@ -128,6 +128,7 @@
 
 	// Window Scroll
 	var windowScroll = function () {
+		debugger;
 		var lastScrollTop = 0;
 
 		$(window).scroll(function (event) {
