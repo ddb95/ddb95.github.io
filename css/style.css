@@ -24,7 +24,7 @@ body {
   position: relative;
 }
 
-.btn-raised{
+.btn-raised {
   cursor: pointer;
 }
 
@@ -1169,6 +1169,14 @@ h6 {
 #fh5co-blog a {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: underline;
+}
+
+.madke{
+  padding: 10px;
+}
+
+.col-md-12 .col-sm-12 .col-xxs-12{
+  padding-bottom: 20px;
 }
 
 #fh5co-blog a:hover {

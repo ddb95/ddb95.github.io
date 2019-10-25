@@ -251,27 +251,19 @@
 			$('#fh5co-blog').waypoint(function (direction) {
 
 				if (direction === 'down' && !$(this.element).hasClass('animated')) {
-
-
 					setTimeout(function () {
 						$('#fh5co-blog .to-animate').each(function (k) {
 							var el = $(this);
-
 							setTimeout(function () {
 								el.addClass('fadeInUp animated');
 							}, k * 200, 'easeInOutExpo');
-
 						});
 					}, 200);
-
-
 					$(this.element).addClass('animated');
-
 				}
 			}, {
 				offset: '80%'
 			});
-
 		}
 	};
 
