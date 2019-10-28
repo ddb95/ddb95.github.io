@@ -1167,15 +1167,19 @@ h6 {
 }
 
 #fh5co-blog a {
-  color: rgba(255, 255, 255, 0.5);
+  color: #333;
   text-decoration: underline;
 }
 
-.madke{
+.blogImage {
+  width: 100%;
+}
+
+.madke {
   padding: 10px;
 }
 
-.col-md-12 .col-sm-12 .col-xxs-12{
+.col-md-12 .col-sm-12 .col-xxs-12 {
   padding-bottom: 20px;
 }
 

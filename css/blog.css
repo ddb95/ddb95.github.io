@@ -34,6 +34,11 @@ body {
 
 }
 
+.bt {
+    color: #333;
+    font-size: 12px;
+}
+
 .continueReading {
     color: #1abc9c !important;
     word-wrap: break-word;
@@ -233,6 +238,8 @@ ba {
 /* Blog Tags */
 bt {
     font-size: 12px;
+    color: #25476A;
+
 }
 
 /* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
