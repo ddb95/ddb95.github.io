@@ -1,7 +1,6 @@
 $(document).ready(function () {
 	// MagnificPopup
 	var magnifPopup = function () {
-		debugger;
 
 		$('.image-popup').magnificPopup({
 			type: 'image',
