@@ -1,4 +1,3 @@
-;
 (function () {
 
 	'use strict';
@@ -64,16 +63,19 @@
 	var clickMenu = function () {
 		debugger;
 		$('#navbar a:not([class="external"])').click(function (event) {
-			var section = $(this).data('nav-section'),
-				navbar = $('#navbar');
+			debugger;
+			// var section = $(this).data('nav-section'),
+			// 	navbar = $('#navbar');
 
 			if ($('[data-section="' + section + '"]').length) {
+				debugger;
 				$('html, body').animate({
 					scrollTop: $('[data-section="' + section + '"]').offset().top
 				}, 500);
 			}
 
 			if (navbar.is(':visible')) {
+				debugger;
 				navbar.removeClass('in');
 				navbar.attr('aria-expanded', 'false');
 				$('.js-fh5co-nav-toggle').removeClass('active');
@@ -82,7 +84,6 @@
 			event.preventDefault();
 			return false;
 		});
-
 
 	};
 
@@ -98,7 +99,7 @@
 	};
 
 	var navigationSection = function () {
-		debugger;
+
 		var $section = $('section[data-section]');
 
 		$section.waypoint(function (direction) {
@@ -128,7 +129,7 @@
 
 	// Window Scroll
 	var windowScroll = function () {
-		debugger;
+
 		var lastScrollTop = 0;
 
 		$(window).scroll(function (event) {
