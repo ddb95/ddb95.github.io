@@ -565,7 +565,7 @@ h6 {
   /* IE10+ */
   /* background-image: repeating-linear-gradient(to bottom right, #3f95ea 0%, #52d3aa 100%); */
   /* background-image: -ms-repeating-linear-gradient(top left, #3f95ea 0%, #52d3aa 100%); */
-  */
+  /* */
 }
 
 #fh5co-home,
@@ -1410,7 +1410,7 @@ h6 {
 /* Blog */
 
 .fh5co-person {
-  border: 2px solid #f2f2f2;
+  border: 2px solid #919198;
   padding: 80px 30px 30px 30px;
   float: left;
   width: 100%;
@@ -1435,7 +1435,7 @@ h6 {
 
 .fh5co-person figure img {
   width: 120px;
-  border: 2px solid #f2f2f2;
+  border: 2px solid #919198;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
