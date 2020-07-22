@@ -61,21 +61,20 @@
 
 	// Page Nav
 	var clickMenu = function () {
-		debugger;
 		$('#navbar a:not([class="external"])').click(function (event) {
-			debugger;
+
 			// var section = $(this).data('nav-section'),
 			// 	navbar = $('#navbar');
 
 			if ($('[data-section="' + section + '"]').length) {
-				debugger;
+
 				$('html, body').animate({
 					scrollTop: $('[data-section="' + section + '"]').offset().top
 				}, 500);
 			}
 
 			if (navbar.is(':visible')) {
-				debugger;
+
 				navbar.removeClass('in');
 				navbar.attr('aria-expanded', 'false');
 				$('.js-fh5co-nav-toggle').removeClass('active');

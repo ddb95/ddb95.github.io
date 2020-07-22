@@ -1415,6 +1415,11 @@ h6 {
   float: left;
   width: 100%;
   position: relative;
+  border-radius: 10px;
+  background-color: #344162;
+  -webkit-box-shadow: 18px 13px 27px -11px rgba(77, 63, 77, 1);
+  -moz-box-shadow: 18px 13px 27px -11px rgba(77, 63, 77, 1);
+  box-shadow: 18px 13px 27px -11px rgba(24, 23, 24, 0.92);
 }
 
 @media screen and (max-width: 992px) {
