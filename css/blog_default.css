@@ -34,7 +34,6 @@ body * {
 h1,
 h2,
 h3,
-h4,
 h5,
 h6,
 strong {
@@ -74,10 +73,6 @@ h3 {
     font-size: 28px;
 }
 
-h4 {
-    font-size: 24px;
-}
-
 h5 {
     font-size: 20px;
 }
@@ -91,7 +86,7 @@ h6 {
     background-color: var(--mainColor);
     border-bottom: 1px solid var(--borderColor);
     overflow: auto;
-    height: 57em;
+    height: 90em;
 }
 
 .s2 {
@@ -151,6 +146,8 @@ h6 {
 }
 
 
+
+
 #navigation {
     margin: 0;
     padding: 10px;
@@ -160,6 +157,10 @@ h6 {
     display: inline-block;
     margin-right: 5px;
     margin-left: 5px;
+}
+
+#navigation li a :hover {
+    text-decoration: underline;
 }
 
 .dots-wrapper {
@@ -479,10 +480,17 @@ body {
     box-sizing: border-box;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
 .blog-container {
-    background: #fff;
+    background: #344162;
     border-radius: 5px;
-    box-shadow: hsla(0, 0, 0, .2) 0 4px 2px -2px;
+    -webkit-box-shadow: 18px 13px 27px -11px rgba(77, 63, 77, 1);
+    -moz-box-shadow: 18px 13px 27px -11px rgba(77, 63, 77, 1);
+    box-shadow: 18px 13px 27px -11px rgba(24, 23, 24, 0.92);
     font-family: "adelle-sans", sans-serif;
     font-weight: 100;
     margin: 48px auto;
@@ -527,8 +535,8 @@ body {
     width: 80%;
 }
 
-.blog-author h3::before,
-.blog-author--no-cover h3::before {
+.blog-author h4::before,
+.blog-author--no-cover h4::before {
     background: url("/images/person.jpg");
     background-size: cover;
     border-radius: 50%;
@@ -539,16 +547,22 @@ body {
     position: relative;
     top: 8px;
     width: 32px;
+    cursor: pointer;
+    font-family: 'Russo One', sans-serif;
 }
 
-.blog-author h3 {
+.blog-author h4 {
     color: #fff;
-    font-weight: 100;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Russo One', sans-serif;
 }
 
-.blog-author--no-cover h3 {
-    color: lighten(#333, 40%);
+.blog-author--no-cover h4 {
+    color: #b3b3b3;
     font-weight: 100;
+    font-family: sans-serif;
+    cursor: pointer;
 }
 
 .blog-body {
@@ -562,7 +576,8 @@ body {
 }
 
 .blog-title h1 a {
-    color: #333;
+    color: #b3b3b3;
+    cursor: pointer;
     font-weight: 100;
 }
 
