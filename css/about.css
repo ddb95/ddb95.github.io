@@ -1415,6 +1415,7 @@ h6 {
     float: left;
     width: 100%;
     position: relative;
+    animation: SlideUp 1.4s ease-in-out;
 }
 
 @media screen and (max-width: 992px) {
@@ -1912,4 +1913,14 @@ h6 {
 
 .name {
     color: whitesmoke;
+}
+
+@keyframes SlideUp {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
