@@ -536,6 +536,10 @@ h6 {
         display: grid !important;
     }
 
+    #contact-form {
+        max-width: 87%;
+    }
+
 }
 
 @media screen and (min-width: 321px) and (max-width: 400px) {
@@ -557,6 +561,10 @@ h6 {
 
     #navigation li {
         margin-right: 0 !important;
+    }
+
+    #contact-form {
+        max-width: 85%;
     }
 
 }
@@ -593,6 +601,10 @@ h6 {
         padding: 2% !important;
     }
 
+    #contact-form {
+        max-width: 85%;
+    }
+
 }
 
 @media screen and (min-width: 0px) and (max-width: 320px) {
@@ -625,6 +637,10 @@ h6 {
         display: contents !important;
         font-size: 13px !important;
         padding: 2% !important;
+    }
+
+    #contact-form {
+        max-width: 85%;
     }
 
 }
