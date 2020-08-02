@@ -108,6 +108,13 @@ h6 {
 	margin: 0 auto;
 }
 
+.footer {
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
 
 .greeting-wrapper {
 	display: grid;
@@ -430,6 +437,12 @@ h6 {
 @media screen and (max-width: 1200px) {
 	.main-container {
 		width: 95%;
+	}
+
+	.footer {
+		width: 95%;
+		padding-top: 5%;
+		padding-bottom: 5%;
 	}
 }
 

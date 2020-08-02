@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Linked List</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/blue.css"> -->
+
+
+    <style type="text/css">
+        .img-container {
+            max-width: 600px;
+        }
+
+        img {
+            width: 100%
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav-wrapper">
+        <!-- Link around dots-wrapper added after tutorial video -->
+        <a href="index.html">
+            <div class="dots-wrapper">
+                <div id="dot-1" class="browser-dot"></div>
+                <div id="dot-2" class="browser-dot"></div>
+                <div id="dot-3" class="browser-dot"></div>
+            </div>
+        </a>
+
+        <ul id="navigation">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="main-container">
+        <br>
+
+        <div class="img-container">
+            <img src="../images/linked.jpg">
+        </div>
+
+        <h2>Linked List</h2>
+        <h3>Part 1 : Understanding the Basics</h3>
+        <h5>Topics Covered</h5>
+        <ul>
+            <li>- What are Linked Lists?</li>
+            &nbsp;
+            <li>- Why Linked Lists?</li>
+            &nbsp;
+            <li>- What is a node?</li>
+            &nbsp;
+            <li>- Singly Linked Lists</li>
+            &nbsp;
+            <li>- Creating a Node Object</li>
+            &nbsp;
+            <li>- Creating a Linked List and appending multiple nodes.</li>
+        </ul>
+        <br>
+        <h5>Linked Lists</h5>
+        <p>Linked List data-structures are a kind of sequence
+            based containers to store your data and access a collection of data. List is one of the sequence based
+            data-structures. In python, Lists come with a variety of features and methods to extract and manipulate
+            the data. The python list can be automatically adjusted according to the need of the user.</p>
+        <h5>Why Linked Lists?</h5>
+        <p>The python list has some significant drawback as well:</p>
+        <ul>
+            <li>- Insertion and deletion are time consuming and tiresome, specially for huge collections of data</li>
+            &nbsp;
+            <li>- The length of the dynamic list is longer than it it requires</li>
+            &nbsp;
+            <li>- An expansion of the list requires the creation of another list, where original elements need to be
+                copied and hence each time a list is created the program allocates a block of memory in which list
+                is stored. Thus for large arrays, it is really difficult and not a good practice.</li>
+        </ul>
+        <p>So to solve the aforementioned problems we have Linked
+            List Data Structure. This provides an alternative to array-list data structures. It has efficient
+            management and requires smaller memory allocations. It does eliminate the efficient way of accessing an
+            element in constant time. Thus, it is not suited for all data storage problem.</p>
+
+        <h5>Singly Linked List</h5>
+        <div class="img-container">
+            <img src="../images/node.jpg">
+        </div>
+        <p>The Singly Linked List is a linear data structure in which traversal starts at the beginning and gradually
+            progresses
+            towards the end, one at a time. It is a collection of <b>nodes</b> that forms a linear sequence. The nodes
+            store
+            the reference
+            to the next node and the element of the sequence.</p>
+
+        <div class="img-container">
+            <img src="../images/linked.jpg">
+        </div>
+
+        <p>Most Nodes in the list have no names and are referenced by using the <b>next</b> field of the preceding
+            node. The head pointer is referenced by a variable called <b>head</b>. A linked list can be empty, which
+            indicates that the <b>head reference</b> is null. </p>
+
+        <h5>Creating a Node Object</h5>
+
+        <div class="img-container">
+            <img src="../images/createANode.png">
+        </div>
+
+        <p>
+            We create a class <b>Element</b> wherein we initialize the <b>node</b> object and assign a value and also
+            initialize next as null value as well. Thus we have individual elements as nodes, we need to connect each
+            other by referencing through the next value.
+        </p>
+
+        <h5>Creating a Linked List</h5>
+        <div class="img-container">
+            <img src="../images/appendingTheNode.png">
+        </div>
+        <p>Creating a linked list involves creating multiple nodes and then appending a node at the beginning and
+            referencing as
+            <b>head</b>, rest of the nodes will be referenced using the <b>next</b> field of the preceding node.</p>
+    </div>
+    <div class="footer">
+        <p>
+            References:
+        </p>
+        <li>- <a href="https://github.com/ddb95/Stanford_Algorithms_DesignAndAnalysis">Source Code</a></li>
+        &nbsp;
+        <li>- Data Structures and Algorithms in Python By Goodrich, Tamassia Goldwasser</li>
+        &nbsp;
+        <li>- Data Structures and Algorithms in Python By Rance D. Necaise</li>
+        &nbsp;
+        <li>- <a
+                href="https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256?utm_source=gsem_brand&utm_medium=ads_n&utm_campaign=920638034_c&utm_term=53693097098_in&utm_keyword=%2Budacity%20%2Bdata%20%2Bstructure_b">Udacity
+                - Data Structures and Algorithms in Python</a></li>
+
+    </div>
+</body>
+
+</html>
