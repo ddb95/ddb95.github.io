@@ -351,6 +351,10 @@ h6 {
 	width: 100%;
 }
 
+.secondaryHeading {
+	text-decoration: underline;
+}
+
 
 .post-wrapper {
 	display: grid;

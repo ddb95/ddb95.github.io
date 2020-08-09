@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Linked List</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../../css/default.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/blue.css"> -->
+
+
+    <style type="text/css">
+        .img-container {
+            max-width: 600px;
+        }
+
+        img {
+            width: 100%
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav-wrapper">
+        <!-- Link around dots-wrapper added after tutorial video -->
+        <a>
+            <div class="dots-wrapper">
+                <div id="dot-1" class="browser-dot"></div>
+                <div id="dot-2" class="browser-dot"></div>
+                <div id="dot-3" class="browser-dot"></div>
+            </div>
+        </a>
+
+        <ul id="navigation">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../blog.html">Blog</a></li>
+            <li><a href="../../about.html">About</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="main-container">
+        <br>
+
+        <div class="img-container">
+            <img src="../../images/linked.jpg">
+        </div>
+
+        <h2>Linked List</h2>
+        <h3>Part 2 : A Deep Dive into Linked List</h3>
+        <h5>Topics Covered</h5>
+        <ul>
+            <li>- Displaying all the Elements</li>
+            &nbsp;
+            <li>- Inserting an Element</li>
+            &nbsp;
+            <li>- Remove an Element</li>
+            &nbsp;
+            <li>- Reversing the Linked List</li>
+        </ul>
+        <br>
+        <h5>Displaying all the Elements</h5>
+        <p>In our earlier example I have shown how to traverse and append nodes at the end. Let's see how to
+            traverse and display
+            all the elements in the linked list
+        </p>
+        <div class="img-container">
+            <img src="../../images/traverse.png">
+        </div>
+        <p>
+            <span class="secondaryHeading">Algorithm</span>
+        <ol>
+            <li> Created a class Element and LinkedList. Element has two attributes value and next, next stores the
+                pointer to the next element. </li>
+            &nbsp;
+            <li> We append the nodes at the end of the Linked List by the append() method. </li>
+            &nbsp;
+            <li> The display() method initially points current node to the head of the list</li>
+            &nbsp;
+            <li> Traverse through the list till the current points to null</li>
+            &nbsp;
+            <li> Display each node value</li>
+        </ol>
+        </p>
+        <div class="img-container">
+            <img src="../../images/display.png">
+        </div>
+        <h5>Inserting an Element</h5>
+
+        <div class="img-container">
+            <img src="../../images/insert.png">
+        </div>
+        <p>The append() funtion inserts a new node after a certain node is found. The time complexity to append a new
+            node is O(n)
+            where n = number of nodes in the Linked List.
+        </p>
+        <p>
+            <span class="secondaryHeading">Algorithm</span>
+        <ol>
+            <li> We have a insert after a certain node. So we traverse the linked list</li>
+            &nbsp;
+            <li> Check if the previous node exists and then create a new Node.</li>
+            &nbsp;
+            <li> Make new Node as next of the previous node.</li>
+            &nbsp;
+            <li> Make the next node value as the next of the new Node </li>
+            &nbsp;
+            <li> Display each node value</li>
+        </ol>
+        </p>
+        <div class="img-container">
+            <img src="../../images/insertCode.png">
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            References:
+        </p>
+        <li>- <a href="https://github.com/ddb95/Stanford_Algorithms_DesignAndAnalysis">Source Code</a></li>
+        &nbsp;
+        <li>- Data Structures and Algorithms in Python By Goodrich, Tamassia Goldwasser</li>
+        &nbsp;
+        <li>- Data Structures and Algorithms in Python By Rance D. Necaise</li>
+        &nbsp;
+        <li>- <a
+                href="https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256?utm_source=gsem_brand&utm_medium=ads_n&utm_campaign=920638034_c&utm_term=53693097098_in&utm_keyword=%2Budacity%20%2Bdata%20%2Bstructure_b">Udacity
+                - Data Structures and Algorithms in Python</a></li>
+
+
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = 'https://ddb95.github.io/posts/linkedList/part2.html';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = 'linkedListPart2'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+            
+            */
+            (function () { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://debadattabhattacharjee.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+                Disqus.</a></noscript>
+
+    </div>
+</body>
+
+</html>
